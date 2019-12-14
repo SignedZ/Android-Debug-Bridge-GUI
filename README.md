@@ -23,6 +23,6 @@ Hey
 
 安装~~ADB Interface~~:*https://blog.csdn.net/riyuexingchen1204/article/details/84594061*
 
-*~~这两个网页提到的文件会以一个叫做runtime的版本放在最下面
+~~这两个网页提到的文件会以一个叫做runtime的版本放在最下面
 
-*`玩 的 开 心
+~~玩 的 开 心
