@@ -19,7 +19,7 @@ Welcome!
 
 设置~~adb.exe~~为环境变量:*https://blog.csdn.net/qq_36327203/article/details/79469576*
 
-*设置fastboot.exe为环境变量与设置adb.exe为环境变量相同
+* 设置fastboot.exe为环境变量与设置adb.exe为环境变量相同
 
 安装~~ADB Interface~~:*https://blog.csdn.net/riyuexingchen1204/article/details/84594061*
 
