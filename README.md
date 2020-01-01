@@ -24,3 +24,9 @@ Welcome!
 安装~~ADB Interface~~:*https://blog.csdn.net/riyuexingchen1204/article/details/84594061*
 
 这两个网页提到的文件会以一个叫做runtime的版本放在最下面
+
+所有功能都不会包含在启动器内(Launcher) 都在下一层的文件夹
+
+这也是方便功能修改和增加
+
+还能怎么调教看各位Developer的本事了
