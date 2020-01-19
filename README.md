@@ -38,13 +38,14 @@ EN
 # Android-Debug-Bridge-Toolkit
  Welcome!
  ### Attention
- ## Note
- # Note
+ ## No
+ # No
+
  This project is not in English. This tool contains too many things.
 
  So you will most likely use this tool in conjunction with * translation *.  * To English speakers ~~ *
 
- To use this tool, you also need to cooperate with some runtime libraries `ADB Toolkit & ADB Interface` adb and fastboot. You must also add them to the environment variables. Using absolute paths will make the folders under each function have adb toolkit, then the size of the compressed package  Will grow exponentially with the addition of features (too big for you and I are not good to download)
+ To use this tool, you also need to cooperate with some runtime libraries `ADB Toolkit & ADB Interface` adb and fastboot. You must also add them to the environment variables. Using absolute paths will make the folders under each function have adb toolkit, then the size of the compressed package  Will grow exponentially with the addition of features (too big for you and not good to download)
 
  So all three are indispensable.
 
@@ -54,11 +55,11 @@ EN
 
  Here are some methods
 
- Set ~~ adb.exe ~~ as environment variable: * https: //blog.csdn.net/qq_36327203/article/details/79469576*
+ Set adb.exe as environment variable:https://blog.csdn.net/qq_36327203/article/details/79469576
 
  * Setting fastboot.exe as an environment variable is the same as setting adb.exe as an environment variable
 
- Installation ~~ ADB Interface ~~: * https: //blog.csdn.net/riyuexingchen1204/article/details/84594061*
+ Installation ADB Interface:https://blog.csdn.net/riyuexingchen1204/article/details/84594061
 
  The files mentioned on these two pages will be placed at the bottom with a version called runtime
 
@@ -66,8 +67,6 @@ EN
 
  This is also convenient for function modification and addition
 
- ~~ KeyEvent ~~: * https: //blog.csdn.net/sinat_27672523/article/details/88748398*
-
- How can you adjust the skills of Developers?
+ KeyEvent:https://blog.csdn.net/sinat_27672523/article/details/88748398
 
 (Thanks Google Translate)
