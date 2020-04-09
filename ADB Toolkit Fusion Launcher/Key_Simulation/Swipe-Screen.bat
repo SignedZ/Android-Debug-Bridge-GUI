@@ -1,16 +1,19 @@
 @echo off
 %adb% start-server
-echo ËµÃ÷
-echo ×óx=0
-echo ÓÒx=×î´óÓÐÐ§¾àÀë
-echo ÉÏy=0
-echo ÏÂy=×î´óÓÐÐ§¾àÀë
-echo ÆðÊ¼ºÍ½áÊø¶¼Ã»ÓÐ¸ºÊýµÄ
-echo x yÓÐÐ§¾àÀë
+echo è¯´æ˜Ž
+echo å·¦x=0
+echo å³x=æœ€å¤§æœ‰æ•ˆè·ç¦»
+echo ä¸Šy=0
+echo ä¸‹y=æœ€å¤§æœ‰æ•ˆè·ç¦»
+echo èµ·å§‹å’Œç»“æŸéƒ½æ²¡æœ‰è´Ÿæ•°çš„
+echo x yæœ‰æ•ˆè·ç¦»
 %adb% shell wm size
-set /p x_start=ÆðÊ¼µãx×ø±ê:
-set /p y_start=ÆðÊ¼µãy×ø±ê:
-set /p x_end=½áÊøµãx×ø±ê:
-set /p y_end=½áÊøµãy×ø±ê:
-%adb% shell input swipe %x_start% %y_start% %x_end% %y_end%
+set /p x_start=èµ·å§‹ç‚¹xåæ ‡:
+set /p y_start=èµ·å§‹ç‚¹yåæ ‡:
+set /p x_end=ç»“æŸç‚¹xåæ ‡:
+set /p y_end=ç»“æŸç‚¹yåæ ‡:
+set /p time_D=æ»‘åŠ¨æ—¶é•¿(ms):
+%adb% shell input swipe %x_start% %y_start% %x_end% %y_end% %time_D%
+echo [%date%-%time%]Action:screen.swipe>>D:\ADB_Tools.log
+echo [%date%-%time%]%x_start%-%y_start%:%x_end%-%y_end%-%time_D%ms>>D:\ADB_Tools.log
 exit
