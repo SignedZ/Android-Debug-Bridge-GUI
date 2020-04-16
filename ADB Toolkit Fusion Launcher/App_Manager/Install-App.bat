@@ -1,6 +1,5 @@
 @echo off
-echo 服务启动中..
-%adb% start-server
+
 cls
 :mui
 cls
@@ -14,6 +13,10 @@ if '%ERRORLEVEL%'=='3' goto list_install
 goto mui
 
 :x_mui
+cls
+echo 服务启动中..
+%adb% start-server
+cls
 set /p APK=apk_File:
 echo [%date%-%time%]Action:application.install.once(file:%apk%)>>D:\ADB_Tools.log
 %adb% install %APK%
@@ -30,6 +33,6 @@ echo [%date%-%time%]Action:application.list.added(file:%apk%)>>D:\ADB_Tools.log
 goto y_mui
 
 :list_install
-start \temp\install.bat
+start temp\install.bat
 echo [%date%-%time%]Action:application.list.install>>D:\ADB_Tools.log
 goto mui
