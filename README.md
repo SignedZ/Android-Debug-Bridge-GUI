@@ -1,83 +1,92 @@
-ZH_CN
+ZH-Ch Only ADB Toolkit Repo
 
 # Android-Debug-Bridge-Toolkit
 
-Welcome!
+欢迎哈
 
-### 注意
+### 噔噔咚
 
-## 注意
+## 噔噔咚
 
-# 注意
+# 说明
 
-该项目不是使用英文  这工具包含的东西太多了 我不好整
+该项目使用全中文(除日志记录外)作为原生语言  该工具包含的内容实在是太多了 ~~而且我英语很渣~~
 
-所以你很可能要配合*翻译*来使用这个工具。 *对英文使用者的 ~~关 爱~~*
+所以看不懂中文的人很可能要配合*翻译*来使用这个工具。~~虽说很困难~~<u>(所以可能在某一天单独出一个En的repo)</u>
 
-使用这个工具你还要配合一些运行库`ADB工具包&ADB Interface` adb和fastboot还要添加到环境变量 使用绝对路径会让每一个功能下的文件夹都有adb工具包,那么该压缩包的大小将会随着功能的添加呈指数性增长(太大了你我都不好下载)
+使用这个工具需要使用一些运行库`ADB(Included adb.exe&fastboot)&ADB Interface`
 
-所以这三者都不可缺少 少了一样都不能正常使用
+都不能缺少安装 少了一样都不能正常使用~~(也许只是不能完全使用而已)~~
 
-我收集而来的`AndroidDebugBridge(已包含fastboot.exe)`和`AndroidDebugBridge Interface`
+我收集而来的这些运行库 装起来是没有问题的
 
-在我的电脑上装是没有问题的
-
-这里是一些运行库使用的方法
-
-设置~~adb.exe~~为环境变量:*https://blog.csdn.net/qq_36327203/article/details/79469576*
-
-* 设置fastboot.exe为环境变量与设置adb.exe为环境变量相同
-
-安装~~ADB Interface~~:*https://blog.csdn.net/riyuexingchen1204/article/details/84594061*
-
-这两个网页提到的文件会以一个叫做runtime的版本放在最下面
-
-所有功能都不会包含在启动器内(Launcher) 都在下一层的文件夹
-
-这也是方便功能修改和增加
-
-~~一些KeyEvent~~:*https://blog.csdn.net/sinat_27672523/article/details/88748398*
+为了方便大家下载 已released一个叫做The Runtime的版本放在最下面
 
 还能怎么调教看各位Developer的本事了
 
-EN
+新版中加入了日志记录功能 如果在运行时出现了sm问题
 
-# Android-Debug-Bridge-Toolkit
+可以通过查找 对应出错时间 将过程或那一段的内容发给我
 
- Welcome!
+或许我能解决~~(也说不定)~~
 
- ### -
+~~还有各位记得清理log 这东西放久了我都打不开~~
 
- ## -
 
- # -
 
- This project is not in English. This tool contains too many things.
+### ADB&Fastboot原程序安装方法
 
- So you will most likely use this tool in conjunction with *translation*  
+右键此电脑 单击属性 
 
- To use this tool, you also need to cooperate with some runtime libraries `ADB Toolkit & ADB Interface` adb and fastboot. You must also add them to the environment variables. Using absolute paths will make the folders under each function have adb toolkit, then the size of the compressed package  Will grow exponentially with the addition of features (too big for you and not good to download)
+→高级系统设置(如果有开了UAC的记得允许权限)
 
- So all three are indispensable.
+下方有个环境变量 单击
 
- I collected `AndroidDebugBridge (fastboot.exe is included)` and `AndroidDebugBridge Interface`
+上面的是用户 下方的是系统 只需要用户变量即可
 
- No problem in installing it on my computer
+点击新建 变量名填 adb 值就是文件位置(就是adb.exe的程序位置)
 
- Here are some methods
+确定 确定 然后退出
 
- Set ~~adb.exe~~ as environment variable:https://blog.csdn.net/qq_36327203/article/details/79469576
+win+r 输入 %adb% 查看是否会出现一大串信息
 
- * Setting ~~fastboot.exe~~ as an environment variable is the same as setting adb.exe as an environment variable
+有即代表配置完成
 
- Installation ~~ADB Interface~~:https://blog.csdn.net/riyuexingchen1204/article/details/84594061
+(想配置fastboot 新建fastboot变量名 后面位置即可 还是以上面的操作进行)
 
- The files mentioned on these two pages will be placed at the bottom with a version called runtime
+* 设置fastboot.exe为环境变量与设置adb.exe为环境变量相同
 
- All features will not be included in the launcher (Launcher) folders on the next level
+  
 
- This is also convenient for function modification and addition
+### ADB Interface安装方法
 
- ~~Some KeyEvent~~:https://blog.csdn.net/sinat_27672523/article/details/88748398
+右键此电脑 单击管理 转到设备管理器
 
-(Thanks Google Translate)
+在其他设备里找到出错的ADB Interface
+
+双击它 点击下方的更新驱动程序
+
+到了搜索驱动程序软件时 单击 浏览计算机以查找驱动程序软件
+
+单击 从计算机的设备驱动程序列表中选择
+
+点击下一步 再从磁盘安装
+
+单击浏览 找到adb interface的文件夹目录 然后双击 android_winusb.inf 文件
+
+之后下一步 如有提示windows无法验证不兼容也不要在意 是即可
+
+等待安装 完成后会提示 Windows已经成功地更新驱动程序文件
+
+安装即完成
+
+
+
+## 使用的一些文章链接(Thanks)
+
+<u>*https://blog.csdn.net/sinat_27672523/article/details/88748398*</u>
+
+<u>*https://blog.csdn.net/qq_36327203/article/details/79469576*</u>
+
+<u>*https://blog.csdn.net/riyuexingchen1204/article/details/84594061</u>*
+
