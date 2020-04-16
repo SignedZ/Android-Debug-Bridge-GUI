@@ -3,12 +3,13 @@ echo 服务启动中..
 %adb% start-server
 cls
 :mui
+cls
 echo 1]一次一次安装
 echo 2]队列安装
 echo 3]打开已生成的队列安装脚本
-choice /n /c:12 /m "键入功能数字...>"
+choice /n /c:123 /m "键入功能数字...>"
 if '%ERRORLEVEL%'=='1' goto x_mui
-if '%ERRORLEVEL%'=='2' md temp&echo %adb% start-server>temp\install.bat&echo cls>>temp\install.bat&goto y_mui
+if '%ERRORLEVEL%'=='2' goto y_mui
 if '%ERRORLEVEL%'=='3' goto list_install
 goto mui
 
@@ -29,8 +30,6 @@ echo [%date%-%time%]Action:application.list.added(file:%apk%)>>D:\ADB_Tools.log
 goto y_mui
 
 :list_install
-start temp\install.bat
+start \temp\install.bat
 echo [%date%-%time%]Action:application.list.install>>D:\ADB_Tools.log
-rd /s /q  temp
-echo [%date%-%time%]Action:file.deleted()>>D:\ADB_Tools.log
 goto mui
