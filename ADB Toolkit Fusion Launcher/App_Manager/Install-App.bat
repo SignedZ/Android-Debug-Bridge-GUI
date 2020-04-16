@@ -1,8 +1,9 @@
 @echo off
-echo ·þÎñÆô¶¯ÖÐ..
+echo æœåŠ¡å¯åŠ¨ä¸­..
 %adb% start-server
+:start
 cls
-set /p APK=apkÂ·¾¶(¾ø¶Ô,²»Òª¼Ó±êµãµ¥ÒýË«ÒýºÅ):
+set /p APK=apk_File:
 echo [%date%-%time%]Action:application.install(file:%apk%)>>D:\ADB_Tools.log
 %adb% install %APK%
-exit
+goto start
