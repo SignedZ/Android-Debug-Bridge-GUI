@@ -10,20 +10,20 @@
 echo [%date%-%time%]-Log Start->>D:\ADB_Tools.log
 echo [%date%-%time%]File:tools.open>>D:\ADB_Tools.log
 cls
-title Android Debug Bridge¹¤¾ß
+title Android Debug Bridgeå·¥å…·
 echo Tip:All Of Tools Running Log Were Saving In D:\ADB_Tools.log
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]Ó¦ÓÃ¹ÜÀí(ËùÓÐ ÏµÍ³ µÚÈý·½ °²×° Ð¶ÔØ Çå³ýÓ¦ÓÃÊý¾Ý)        =
-echo =[2]ÎÄ¼þ¹ÜÀí(µçÄÔ-ÊÖ»ú ÊÖ»ú-µçÄÔ)                            =
-echo =[3]°´¼üÄ£ÄâÊäÈë(Ì«¶à²»ÁÐ¾Ù)                                 =
-echo =[4]Éè±¸ÐÅÏ¢(ÐÍºÅ µç³Ø ·Ö±æÂÊ ÏÔÊ¾ÆÁ Android°æ±¾ IMEI CPU..) =
-echo =[5]Ð¡¹¦ÄÜ                                                   =
-echo =[6]¸ß¼¶ÖØÆôºÍÄ³Ð©¹ØÓÚË¢»úÑ¡Ïî                               =
-echo =[7]ShellÃüÁî                                                =
-echo =[8]´ò¿ªadbÃüÁîÐÐ                                            =
-echo =[9]¹ØÓÚ(Õâ¸ö¹¤¾ßºÍadb°æ±¾)                                  =
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]åº”ç”¨ç®¡ç†(æ‰€æœ‰ ç³»ç»Ÿ ç¬¬ä¸‰æ–¹ å®‰è£… å¸è½½ æ¸…é™¤åº”ç”¨æ•°æ®)        =
+echo =[2]æ–‡ä»¶ç®¡ç†(ç”µè„‘-æ‰‹æœº æ‰‹æœº-ç”µè„‘)                            =
+echo =[3]æŒ‰é”®æ¨¡æ‹Ÿè¾“å…¥(å¤ªå¤šä¸åˆ—ä¸¾)                                 =
+echo =[4]è®¾å¤‡ä¿¡æ¯(åž‹å· ç”µæ±  åˆ†è¾¨çŽ‡ æ˜¾ç¤ºå± Androidç‰ˆæœ¬ IMEI CPU..) =
+echo =[5]å°åŠŸèƒ½                                                   =
+echo =[6]é«˜çº§é‡å¯å’ŒæŸäº›å…³äºŽåˆ·æœºé€‰é¡¹                               =
+echo =[7]Shellå‘½ä»¤                                                =
+echo =[8]æ‰“å¼€adbå‘½ä»¤è¡Œ                                            =
+echo =[9]å…³äºŽ(è¿™ä¸ªå·¥å…·å’Œadbç‰ˆæœ¬)                                  =
 echo ============================Ver.None==========================
-choice /n /c:123456789 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:123456789 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' goto App_Manager
 if '%ERRORLEVEL%'=='2' goto File_Manager
 if '%ERRORLEVEL%'=='3' goto Key_Simulation
@@ -43,14 +43,14 @@ goto memu
 :App_Manager
 echo [%date%-%time%]Fusion:app.manager.open>>D:\ADB_Tools.log
 cls
-title Ó¦ÓÃ¹ÜÀí
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]ÏÔÊ¾ËùÓÐÓ¦ÓÃ                                             =
-echo =[2]°²×°Ó¦ÓÃ                                                 =
-echo =[3]Ð¶ÔØÓ¦ÓÃ                                                 =
-echo =[4]·µ»ØÖ÷Ò³Ãæ                                               =
+title åº”ç”¨ç®¡ç†
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]æ˜¾ç¤ºæ‰€æœ‰åº”ç”¨                                             =
+echo =[2]å®‰è£…åº”ç”¨                                                 =
+echo =[3]å¸è½½åº”ç”¨                                                 =
+echo =[4]è¿”å›žä¸»é¡µé¢                                               =
 echo ============================Ver.None==========================
-choice /n /c:1234 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:1234 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' start App_Manager\AllApp.bat
 if '%ERRORLEVEL%'=='2' start App_Manager\Install-App.bat
 if '%ERRORLEVEL%'=='3' start App_Manager\Uninstall-APP.bat
@@ -60,13 +60,13 @@ goto App_Manager
 :File_Manager
 echo [%date%-%time%]Fusion:file.manager.open>>D:\ADB_Tools.log
 cls
-title ÎÄ¼þ¹ÜÀí
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]¸´ÖÆÊÖ»úÉÏµÄÎÄ¼þµ½µçÄÔ                                   =
-echo =[2]¸´ÖÆµçÄÔÉÏµÄÎÄ¼þµ½ÊÖ»ú                                   =
-echo =[3]»Øµ½Ö÷½çÃæ                                               =
+title æ–‡ä»¶ç®¡ç†
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]å¤åˆ¶æ‰‹æœºä¸Šçš„æ–‡ä»¶åˆ°ç”µè„‘                                   =
+echo =[2]å¤åˆ¶ç”µè„‘ä¸Šçš„æ–‡ä»¶åˆ°æ‰‹æœº                                   =
+echo =[3]å›žåˆ°ä¸»ç•Œé¢                                               =
 echo ============================Ver.None==========================
-choice /n /c:123 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:123 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' start File_Manager\From-Phone-To-PC.bat
 if '%ERRORLEVEL%'=='2' start File_Manager\From-PC-To-Phone.bat
 if '%ERRORLEVEL%'=='3' goto memu
@@ -76,32 +76,33 @@ goto File_Manager
 :Key_Simulation
 echo [%date%-%time%]Fusion:key.input.open>>D:\ADB_Tools.log
 cls
-title °´¼üÄ£ÄâÊäÈë
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]Ö÷ÆÁÄ»¼ü                                                 =
-echo =[2]·µ»Ø¼ü                                                   =
-echo =[3]´ò¿ªµç»°                                                 =
-echo =[4]¹Ò¶Ïµç»°                                                 =
-echo =[5]ÉÏÉýÒôÁ¿                                                 =
-echo =[6]½µµÍÒôÁ¿                                                 =
-echo =[7]µçÔ´¼ü                                                   =
-echo =[8]ÅÄÕÕ(Ö»ÔÚÏà»úÀïÓÐÓÃ)                                     =
-echo =[9]²Ëµ¥¼ü                                                   =
-echo =[0]²¥·Å/ÔÝÍ£                                                =
-echo =[a]Í£Ö¹²¥·Å                                                 =
-echo =[b]¾²Òô                                                     =
-echo =[c]´ò¿ªÉèÖÃ                                                 =
-echo =[d]ÇÐ»»app                                                  =
-echo =[e]µãÁÁÆÁÄ»                                                 =
-echo =[f]ÉÏÉýÆÁÄ»ÁÁ¶È                                             =
-echo =[g]½µµÍÆÁÄ»ÁÁ¶È                                             =
-echo =[h]¹Ø±ÕÆÁÄ»                                                 =
-echo =[i]ÊäÈëÎÄ×Ö                                                 =
-echo =[j]»¬¶¯ÆÁÄ»                                                 =
-echo =[k]¸ß¼¶                                                     =
-echo =[l]»ØÖ÷½çÃæ                                                 =
+title æŒ‰é”®æ¨¡æ‹Ÿè¾“å…¥
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]ä¸»å±å¹•é”®                                                 =
+echo =[2]è¿”å›žé”®                                                   =
+echo =[3]æ‰“å¼€ç”µè¯                                                 =
+echo =[4]æŒ‚æ–­ç”µè¯                                                 =
+echo =[5]ä¸Šå‡éŸ³é‡                                                 =
+echo =[6]é™ä½ŽéŸ³é‡                                                 =
+echo =[7]ç”µæºé”®                                                   =
+echo =[8]æ‹ç…§(åªåœ¨ç›¸æœºé‡Œæœ‰ç”¨)                                     =
+echo =[9]èœå•é”®                                                   =
+echo =[0]æ’­æ”¾/æš‚åœ                                                =
+echo =[a]åœæ­¢æ’­æ”¾                                                 =
+echo =[b]é™éŸ³                                                     =
+echo =[c]æ‰“å¼€è®¾ç½®                                                 =
+echo =[d]åˆ‡æ¢app                                                  =
+echo =[e]ç‚¹äº®å±å¹•                                                 =
+echo =[f]ä¸Šå‡å±å¹•äº®åº¦                                             =
+echo =[g]é™ä½Žå±å¹•äº®åº¦                                             =
+echo =[h]å…³é—­å±å¹•                                                 =
+echo =[i]è¾“å…¥æ–‡å­—                                                 =
+echo =[j]æ»‘åŠ¨å±å¹•                                                 =
+echo =[k]é«˜çº§                                                     =
+echo =[l]é”®ç›˜å•æ¬¡è¾“å…¥ä¼ é€’                                          =
+echo =[m]é”®å‰å¾€ä¸»ç•Œé¢                                              =
 echo ============================Ver.None==========================
-choice /n /c:1234567890abcdefghijkl /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:1234567890abcdefghijkl /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' start Key_Simulation\Key\Home-Key.bat
 if '%ERRORLEVEL%'=='2' start Key_Simulation\Key\Back-Key.bat
 if '%ERRORLEVEL%'=='3' start Key_Simulation\Key\Open-Call_App.bat
@@ -123,29 +124,30 @@ if '%ERRORLEVEL%'=='18' start Key_Simulation\Key\Shutdown-Screen.bat
 if '%ERRORLEVEL%'=='19' start Key_Simulation\Input-Text.bat
 if '%ERRORLEVEL%'=='20' start Key_Simulation\Swipe-Screen.bat
 if '%ERRORLEVEL%'=='21' start Key_Simulation\Auto.bat
-if '%ERRORLEVEL%'=='22' goto memu
+if '%ERRORLEVEL%'=='22' start Key_Simulation\keyboard.bat
+if '%ERRORLEVEL%'=='23' goto memu
 goto Key_Simulation
 
 
 :Phone_Information
 echo [%date%-%time%]Fusion:phone.information.opened>>D:\ADB_Tools.log
 cls
-title Éè±¸ÐÅÏ¢
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]ÐÍºÅ                                                     =
-echo =[2]µç³Ø×´¿ö                                                 =
-echo =[3]ÆÁÄ»·Ö±æÂÊ                                               =
-echo =[4]ÆÁÄ»ÃÜ¶È                                                 =
-echo =[5]ÏÔÊ¾ÆÁ²ÎÊý                                               =
+title è®¾å¤‡ä¿¡æ¯
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]åž‹å·                                                     =
+echo =[2]ç”µæ± çŠ¶å†µ                                                 =
+echo =[3]å±å¹•åˆ†è¾¨çŽ‡                                               =
+echo =[4]å±å¹•å¯†åº¦                                                 =
+echo =[5]æ˜¾ç¤ºå±å‚æ•°                                               =
 echo =[6]Android ID                                               =
-echo =[7]IMEI(Android4.4ÒÔÏÂ)                                     =
-echo =[8]IMEI(Android5.0¼°ÒÔÉÏ)                                   =
-echo =[9]Android°æ±¾                                              =
-echo =[0]MacµØÖ·                                                  =
-echo =[a]CPUÐÅÏ¢                                                  =
-echo =[b]»ØÖ÷½çÃæ                                                 =
+echo =[7]IMEI(Android4.4ä»¥ä¸‹)                                     =
+echo =[8]IMEI(Android5.0åŠä»¥ä¸Š)                                   =
+echo =[9]Androidç‰ˆæœ¬                                              =
+echo =[0]Macåœ°å€                                                  =
+echo =[a]CPUä¿¡æ¯                                                  =
+echo =[b]å›žä¸»ç•Œé¢                                                 =
 echo ============================Ver.None==========================
-choice /n /c:1234567890ab /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:1234567890ab /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' 
 if '%ERRORLEVEL%'=='2' 
 if '%ERRORLEVEL%'=='3' 
@@ -164,15 +166,15 @@ goto Phone_Information
 :Hided
 echo [%date%-%time%]Fusion:hided.open>>D:\ADB_Tools.log
 cls
-title Ð¡¹¦ÄÜ
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]ÆÁÄ»½ØÍ¼(µ¼³öµ½ÊÖ»ú¸ùÄ¿Â¼)                               =
-echo =[2]ÆÁÄ»½ØÍ¼(µ¼³öµ½µçÄÔcÅÌ¸ùÄ¿Â¼)                            =
-echo =[3]ÆÁÄ»Â¼ÖÆ(µ¼³öµ½ÊÖ»ú¸ùÄ¿Â¼)                               =
-echo =[4]ÆÁÄ»Â¼ÖÆ(µ¼³öµ½µçÄÔcÅÌ)                                  =
-echo =[5]»ØÖ÷½çÃæ                                                 =
+title å°åŠŸèƒ½
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]å±å¹•æˆªå›¾(å¯¼å‡ºåˆ°æ‰‹æœºæ ¹ç›®å½•)                               =
+echo =[2]å±å¹•æˆªå›¾(å¯¼å‡ºåˆ°ç”µè„‘cç›˜æ ¹ç›®å½•)                            =
+echo =[3]å±å¹•å½•åˆ¶(å¯¼å‡ºåˆ°æ‰‹æœºæ ¹ç›®å½•)                               =
+echo =[4]å±å¹•å½•åˆ¶(å¯¼å‡ºåˆ°ç”µè„‘cç›˜)                                  =
+echo =[5]å›žä¸»ç•Œé¢                                                 =
 echo ============================Ver.None==========================
-choice /n /c:12345 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:12345 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' 
 if '%ERRORLEVEL%'=='2' 
 if '%ERRORLEVEL%'=='3' 
@@ -184,17 +186,17 @@ goto Hided
 :Boot
 echo [%date%-%time%]Fusion:boot.open>>D:\ADB_Tools.log
 cls
-title ¸ß¼¶ÖØÆô
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[0]»ØËøBootLoader                                           =
-echo =[1]ÖØÆô                                                     =
-echo =[2]ÖØÆôµ½Recovery                                           =
-echo =[3]ÖØÆôµ½Fastboot                                           =
+title é«˜çº§é‡å¯
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[0]å›žé”BootLoader                                           =
+echo =[1]é‡å¯                                                     =
+echo =[2]é‡å¯åˆ°Recovery                                           =
+echo =[3]é‡å¯åˆ°Fastboot                                           =
 echo =[4]Sideload                                                 =
-echo =[5]Ë¢ÈëREC                                                  =
-echo =[6]»ØÖ÷½çÃæ                                                 =
+echo =[5]åˆ·å…¥REC                                                  =
+echo =[6]å›žä¸»ç•Œé¢                                                 =
 echo ============================Ver.None==========================
-choice /n /c:0123456 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:0123456 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' goto BootMemu_2
 if '%ERRORLEVEL%'=='2' start Boot\Reboot.bat
 if '%ERRORLEVEL%'=='3' start Boot\Recovery.bat
@@ -207,14 +209,14 @@ goto Boot
 :BootMemu_2
 echo [%date%-%time%]Fusion-Switch:boot2.open>>D:\ADB_Tools.log
 cls
-title ¸ß¼¶ÖØÆô2
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[0]»ØÉÏÒ»¼¶                                                 =
-echo =[1]»ªÎªÏµÁÐ                                                 =
-echo =[2]Ð¡Ã×ºÍ¹È¸èÏµÁÐ                                           =
-echo =×¢:Î´²âÊÔ ÇÒÊÊÅäºÜÉÙ                                        =
+title é«˜çº§é‡å¯2
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[0]å›žä¸Šä¸€çº§                                                 =
+echo =[1]åŽä¸ºç³»åˆ—                                                 =
+echo =[2]å°ç±³å’Œè°·æ­Œç³»åˆ—                                           =
+echo =æ³¨:æœªæµ‹è¯• ä¸”é€‚é…å¾ˆå°‘                                        =
 echo ============================Ver.None==========================
-choice /n /c:012 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:012 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' goto Boot
 if '%ERRORLEVEL%'=='2' start Boot\PhoneBootloaderLocker\Huawei.bat
 if '%ERRORLEVEL%'=='3' start Boot\PhoneBootloaderLocker\Google_Xiaomi.bat
@@ -224,13 +226,13 @@ goto BootMemu_2
 :Shell
 echo [%date%-%time%]Fusion:shell.open>>D:\ADB_Tools.log
 cls
-title ShellÃüÁî
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]²é¿´½ø³Ì                                                 =
-echo =[2]²é¿´ÊµÊ±×ÊÔ´Õ¼ÓÃ                                         =
-echo =[3]»ØÖ÷½çÃæ                                                 =
+title Shellå‘½ä»¤
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]æŸ¥çœ‹è¿›ç¨‹                                                 =
+echo =[2]æŸ¥çœ‹å®žæ—¶èµ„æºå ç”¨                                         =
+echo =[3]å›žä¸»ç•Œé¢                                                 =
 echo ============================Ver.None==========================
-choice /n /c:123 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:123 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' 
 if '%ERRORLEVEL%'=='2' 
 if '%ERRORLEVEL%'=='3' goto memu
@@ -240,13 +242,13 @@ goto Shell
 :ABOUT
 echo [%date%-%time%]Fusion:toolkit.about.open>>D:\ADB_Tools.log
 cls
-title ¹ØÓÚ
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =[1]²é¿´ËµÃ÷                                                 =
-echo =[2]ÌøÖÁ¸ÃÏîÄ¿µÄgithubÒ³Ãæ                                   =
-echo =[3]»ØÖ÷½çÃæ                                                 =
+title å…³äºŽ
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =[1]æŸ¥çœ‹è¯´æ˜Ž                                                 =
+echo =[2]è·³è‡³è¯¥é¡¹ç›®çš„githubé¡µé¢                                   =
+echo =[3]å›žä¸»ç•Œé¢                                                 =
 echo ============================Ver.None==========================
-choice /n /c:123 /m "¼üÈë¹¦ÄÜÊý×Ö...>"
+choice /n /c:123 /m "é”®å…¥åŠŸèƒ½æ•°å­—...>"
 if '%ERRORLEVEL%'=='1' goto saying
 if '%ERRORLEVEL%'=='2' Start https://github.com/SignedZ/Android-Debug-Bridge-Toolkit
 if '%ERRORLEVEL%'=='3' goto memu
@@ -254,12 +256,12 @@ goto ABOUT
 
 :saying
 cls
-title ¹ØÓÚ
-echo ===================Android Debug Bridge¹¤¾ß===================
-echo =ºÃ°É,Ð´Õâ¸ö¹¤¾ßÈÔÈ»ÊÇÒòÎªÒ»Ê±ÐËÆð.¸Õ¿ªÊ¼½Ó´¥ADBµÄÊ±ºò»¹ÊÇÔÚ =
-echo =¸÷´óÂÛÌ³ÕÒÎÒÊÖ»úÈçºÎË¢Èëtwrp.³É¹¦ÁË,ºÜ¿ªÐÄ                  =
-echo =ÓÚÊÇ¿ªÆôÁË¸÷Ê½¸÷ÑùµÄË¢»úÖ®Â·((((((((                        =
-echo =ÒÑ¾­Íü¼ÇÁË×î³õ×öÕâ¸ö¹¤¾ßµÄ³õÖÔ µ«¹¤³Ì¿ª¶¼¿ªÁË               =
-echo =»¹ÊÇÓÐ±ØÒªÑÓÐøÏÂÈ¥µÄ(Ð¦                                     =
+title å…³äºŽ
+echo ===================Android Debug Bridgeå·¥å…·===================
+echo =å¥½å§,å†™è¿™ä¸ªå·¥å…·ä»ç„¶æ˜¯å› ä¸ºä¸€æ—¶å…´èµ·.åˆšå¼€å§‹æŽ¥è§¦ADBçš„æ—¶å€™è¿˜æ˜¯åœ¨ =
+echo =å„å¤§è®ºå›æ‰¾æˆ‘æ‰‹æœºå¦‚ä½•åˆ·å…¥twrp.æˆåŠŸäº†,å¾ˆå¼€å¿ƒ                  =
+echo =äºŽæ˜¯å¼€å¯äº†å„å¼å„æ ·çš„åˆ·æœºä¹‹è·¯((((((((                        =
+echo =å·²ç»å¿˜è®°äº†æœ€åˆåšè¿™ä¸ªå·¥å…·çš„åˆè¡· ä½†å·¥ç¨‹å¼€éƒ½å¼€äº†               =
+echo =è¿˜æ˜¯æœ‰å¿…è¦å»¶ç»­ä¸‹åŽ»çš„(ç¬‘                                     =
 echo ==========================2019 12.15==========================
 pause.echo&goto ABOUT
