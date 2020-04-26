@@ -2,17 +2,13 @@ ZH-Ch Only ADB Toolkit Repo
 
 # Android-Debug-Bridge-Toolkit
 
-欢迎哈
+下载时无需进入Release进行下载 那是一些很多问题的版本了 过一段时间会全部删掉(不包含运行库)
 
-### 噔噔咚
-
-## 噔噔咚
-
-# 说明
+所以要想下载的话直接Download Zip即可 但前提是运行库那些都搞好了 不然就真的是个UI程序了（）
 
 该项目使用全中文(除日志记录外)作为原生语言  该工具包含的内容实在是太多了 ~~而且我英语很渣~~
 
-所以看不懂中文的人很可能要配合*翻译*来使用这个工具。~~虽说很困难~~<u>(所以可能在某一天单独出一个En的repo)</u>
+所以看不懂中文的人很可能要配合*翻译*来使用这个工具。~~虽说很困难~~(所以可能在某一天单独出一个En的repo 如果我真的有时间的话)
 
 使用这个工具需要使用一些运行库`ADB(Included adb.exe&fastboot)&ADB Interface`
 
@@ -90,3 +86,4 @@ win+r 输入 %adb% 查看是否会出现一大串信息
 
 <u>*https://blog.csdn.net/riyuexingchen1204/article/details/84594061</u>*
 
+-Lastest Edited 2020/4/26
