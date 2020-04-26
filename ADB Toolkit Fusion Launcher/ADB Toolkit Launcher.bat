@@ -98,11 +98,11 @@ echo =[g]降低屏幕亮度                                             =
 echo =[h]关闭屏幕                                                 =
 echo =[i]输入文字                                                 =
 echo =[j]滑动屏幕                                                 =
-echo =[k]高级                                                     =
+echo =[k]循环Keyevent                                             =
 echo =[l]键盘单次输入传递                                          =
-echo =[m]键前往主界面                                              =
+echo =[m]前往主界面                                               =
 echo ============================Ver.None==========================
-choice /n /c:1234567890abcdefghijkl /m "键入功能数字...>"
+choice /n /c:1234567890abcdefghijklm /m "键入功能数字...>"
 if '%ERRORLEVEL%'=='1' start Key_Simulation\Key\Home-Key.bat
 if '%ERRORLEVEL%'=='2' start Key_Simulation\Key\Back-Key.bat
 if '%ERRORLEVEL%'=='3' start Key_Simulation\Key\Open-Call_App.bat
