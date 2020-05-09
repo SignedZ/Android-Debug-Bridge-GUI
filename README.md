@@ -86,4 +86,10 @@ win+r 输入 %adb% 查看是否会出现一大串信息
 
 <u>*https://blog.csdn.net/riyuexingchen1204/article/details/84594061</u>*
 
--Lastest Edited 2020/4/26
+## 问题
+
+工具内文字全乱码
+
+在此repo中找到出问题的文件进行文本内容替换即可 保存的格式要ANSI
+
+-Lastest Edited 2020/5/9
