@@ -2,6 +2,12 @@ ZH-Ch Only ADB Toolkit Repo
 
 # Android-Debug-Bridge-Toolkit
 
+~~讲真我快没时间整活这些东西了  有接手的吗~~
+
+~~说不定我真的什么时候就弃坑了~~
+
+~~另外要是真的还能再挤一些空余时间 会重置一遍单文件版的ADB Toolkit 真的能出来的话就不需要用到用户变量了~~
+
 下载时无需进入Release进行下载 那是一些很多问题的版本了 过一段时间会全部删掉(不包含运行库)
 
 所以要想下载的话直接Download Zip即可 但前提是运行库那些都搞好了 不然就真的是个UI程序了（）
@@ -30,7 +36,7 @@ ZH-Ch Only ADB Toolkit Repo
 
 
 
-### ADB&Fastboot原程序安装方法
+### ADB&Fastboot配置方法
 
 右键此电脑 单击属性 
 
@@ -54,7 +60,7 @@ win+r 输入 %adb% 查看是否会出现一大串信息
 
   
 
-### ADB Interface安装方法
+### ADB Interface配置方法
 
 右键此电脑 单击管理 转到设备管理器
 
@@ -88,8 +94,10 @@ win+r 输入 %adb% 查看是否会出现一大串信息
 
 ## 问题
 
-工具内文字全乱码
+工具内文字全乱码(找到该出错的bat 编辑 另存为编码ANSI 即可解决)
 
-在此repo中找到出问题的文件进行文本内容替换即可 保存的格式要ANSI
+~~静默批量安装应用并不是那么稳定~~
 
--Lastest Edited 2020/5/9
+## 修改时间
+
+-Lastest Edited 2020/5/10 11:33
