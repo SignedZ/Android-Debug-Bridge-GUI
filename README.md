@@ -2,11 +2,17 @@ ZH-Ch Only ADB Toolkit Repo
 
 # Android-Debug-Bridge-Toolkit
 
-~~讲真我快没时间整活这些东西了  有接手的吗~~
+5/30下午发布最后一个bat版的ADB Toolkit
 
-~~说不定我真的什么时候就弃坑了~~
+以后这个repo都不会再更新
 
-~~另外要是真的还能再挤一些空余时间 会重置一遍单文件版的ADB Toolkit 真的能出来的话就不需要用到用户变量了~~
+另外我会在这两天内做出Toolkit的生成器
+
+只需要简单配置一些信息 即可直接安装 这可以取代现在的东西
+
+等到一段时间后 会有使用Visual Studio编写的C# ADB Toolkit Repo新增
+
+功能和开放性会比这个bat版本的repo更加强大 但 如果我真的能做到的话...
 
 下载时无需进入Release进行下载 那是一些很多问题的版本了 过一段时间会全部删掉(不包含运行库)
 
